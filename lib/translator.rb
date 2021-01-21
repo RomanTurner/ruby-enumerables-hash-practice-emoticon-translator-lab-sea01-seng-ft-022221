@@ -23,6 +23,7 @@ end
 
 
 def get_japanese_emoticon(file, emoji)
+  
 
 end
 
