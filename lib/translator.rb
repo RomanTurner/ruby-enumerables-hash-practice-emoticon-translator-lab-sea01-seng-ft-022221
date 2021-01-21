@@ -30,7 +30,7 @@ def get_japanese_emoticon(file, emoji)
     library[title][:english] == emoji #
 end
 emoji ? library[emoji][:japanese] : "Sorry, that emoticon was not found" #checks to see if the emoji exists
-binding.pry
+
 end
 
 def get_english_meaning(file, emoji)
@@ -40,4 +40,5 @@ def get_english_meaning(file, emoji)
    #same as get_japanese_emoticon
 end
 emoji ? emoji : "Sorry, that emoticon was not found" #checks to see if the emoji exists
+binding.pry
 end
