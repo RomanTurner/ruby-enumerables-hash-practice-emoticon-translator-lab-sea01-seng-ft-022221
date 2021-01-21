@@ -23,7 +23,11 @@ end
 
 
 def get_japanese_emoticon(file, emoji)
-  
+   library = load_library(file) #using our method we can format the file to search it easier
+   
+  emoji = library.keys.find do |key| #iterating over the keys to find the corresponding emoji 
+    
+    library[key][:english] == emoji #
 
 end
 
