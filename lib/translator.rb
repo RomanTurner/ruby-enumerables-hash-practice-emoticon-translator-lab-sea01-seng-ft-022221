@@ -16,7 +16,7 @@ def load_library(file)
     #we want to make the first element, the title of the emoji, a new hash
  hash_library[key][:english] = value[0] 
     #we initialize the key and assign it the corresponding value to where it is being held in the array 
- hash_library[:japanese] = value[1] 
+ hash_library[key][:japanese] = value[1] 
  end
  binding.pry
  hash_library
