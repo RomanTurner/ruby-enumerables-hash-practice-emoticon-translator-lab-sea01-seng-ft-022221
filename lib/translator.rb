@@ -33,11 +33,10 @@ emoji ? library[emoji][:japanese] : "Sorry, that emoticon was not found" #checks
 end
 
 def get_english_meaning(file, emoji)
-   library = load_library(file) #using our method we can format the file to search it easier
-   
-    emoji = library.keys.find do |title| #iterating over the keys to find the corresponding emoji 
-    
-    library[title][:japanese] == emoji #
+   library = load_library(file) 
+   emoji = library.keys.find do |title| 
+   library[title][:japanese] == emoji 
+   #same as get_japanese_emoticon
 end
-emoji ? library[emoji][:english] : "Sorry, that emoticon was not found" #checks to see if the emoji exists
+emoji ? emoji : "Sorry, that emoticon was not found" #checks to see if the emoji exists
 end
