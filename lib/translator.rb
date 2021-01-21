@@ -35,7 +35,7 @@ end
 def get_english_meaning(file, emoji)
    library = load_library(file) #using our method we can format the file to search it easier
    
-  emoji = library.keys.find do |title| #iterating over the keys to find the corresponding emoji 
+    emoji = library.keys.find do |title| #iterating over the keys to find the corresponding emoji 
     
     library[title][:japanese] == emoji #
 end
