@@ -17,6 +17,9 @@ def load_library(file)
  hash_library[key][:english] = value[0] 
     #we initialize the key and assign it the corresponding value to where it is being held in the array 
  hash_library[:japanese] = value[1] 
+ end
+ binding.pry
+ hash_library
 end 
 
 
